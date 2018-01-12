@@ -27,17 +27,11 @@ def sendEmail(fromm, to, subject, message):
         print e
         print "Error: unable to send email"
 
-
-# SERVER CREDENTIALS
-# server = '10.10.2.16,1432'
-# db ='sacars'
-# user ='sacars'
-# password ='sacars'
-
+        
 server = '10.0.16.5'
-db ='sacars'
-user ='ryan'
-password ='ryan'
+db =''
+user =''
+password =''
 
 # VARIABLES
 eventNumber = 0
@@ -87,4 +81,4 @@ if numberOfEvents > 0:
         From = 'ryan.kavanaugh@crc-corp.com'
         To = ['ryan.kavanaugh@crc-corp.com', 'lauren.jenkins@crc-corp.com']  # 'mary.crowe@crc-corp.com',
         print emailString
-        #sendEmail(From, To, Subject, Message)
+        sendEmail(From, To, Subject, Message)
